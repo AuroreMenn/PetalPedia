@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image: MyText
+  name: MyString
+  scientific_name: MyString
+  flower_type: MyString
+  blooming: MyString
+  color: MyString
+  description: MyText
+
+two:
+  image: MyText
+  name: MyString
+  scientific_name: MyString
+  flower_type: MyString
+  blooming: MyString
+  color: MyString
+  description: MyText
