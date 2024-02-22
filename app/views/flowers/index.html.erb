@@ -1,14 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Flowers</h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+<main>
+
+<h1>PetalPedia</h1>
 
 <div id="flowers">
   <% @flowers.each do |flower| %>
-    <%= render flower %>
-    <p>
-      <%= link_to "Show this flower", flower %>
-    </p>
+    <div class="card">
+      <img src="<%= flower.image %>" class="flower_image" alt="Image de fleur" height="300px">
+        <div class="card-body">
+          <p class="card-text"><%= flower.name %></p>
+          <a><%= link_to "Show this flower", flower %></a>
+        </div>
+    </div>
   <% end %>
 </div>
 
 <%= link_to "New flower", new_flower_path %>
+
+</main>
