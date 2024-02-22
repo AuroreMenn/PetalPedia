@@ -24,6 +24,23 @@ h1 {
         font-size: 3.5em;
 }
 
+main {
+    font-family: "Raleway", sans-serif;
+}
+
+.flower_search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+
+}
+
+.field{
+    margin-right:  10px;
+}
+
 #flowers {
         padding-left: 1em;
         padding-right: 1em;
@@ -38,6 +55,17 @@ h1 {
     width: calc(25% - 20px);
     margin: 10px;
     box-sizing: border-box;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.maman_div div {
+    margin-bottom: 10px;
 }
 
 footer {

@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <%= form_with(model: flower) do |form| %>
   <% if flower.errors.any? %>
     <div style="color: red">
@@ -10,6 +14,8 @@
       </ul>
     </div>
   <% end %>
+
+<div class="maman_div">
 
   <div>
     <%= form.label :image, style: "display: block" %>
@@ -45,6 +51,8 @@
     <%= form.label :description, style: "display: block" %>
     <%= form.text_area :description %>
   </div>
+
+</div>
 
   <div>
     <%= form.submit %>

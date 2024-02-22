@@ -2,8 +2,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <main>
 
 <h1>PetalPedia</h1>
@@ -16,10 +15,12 @@
     <%= f.submit "Search", class: "btn btn-primary" %>
   </div>
 <% end %>
+
+
 <div id="flowers">
   <% @flowers.each do |flower| %>
     <div class="card">
-      <img src="<%= flower.image %>" class="flower_image" alt="Image de fleur" height="170px">
+      <img src="<%= flower.image %>" class="flower_image" alt="Image de fleur" height="180px">
         <div class="card-body">
           <p class="card-text"><%= flower.name %></p>
           <a><%= link_to "Show this flower", flower %></a>
