@@ -2,8 +2,8 @@
 
 <%= render @flower %>
 
-<div>
-  <%= link_to "Modifier cette fleur", edit_flower_path(@flower) %> |
+<div class="bouttons">
+  <%= link_to "Modifier cette fleur", edit_flower_path(@flower) %> 
   <%= link_to "Retour à la page d'accueil", flowers_path %>
 
   <%= button_to "Supprimer cette fleur", @flower, method: :delete %>
@@ -14,6 +14,6 @@
     <nav>
         <a href="/flowers">Accueil</a>
         <a href="/flowers/new">Ajouter une fleur</a>
-        <a href="/nouscontacter.html" class="foot_contact">Nous Contacter</a>
+        <a href="nouscontacter.html" class="foot_contact">Nous Contacter</a>
     </nav><br>
 </footer>

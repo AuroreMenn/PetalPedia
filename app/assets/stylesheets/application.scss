@@ -84,6 +84,11 @@ main {
     justify-content: center;
 }
 
+.bouttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 footer {
         background-color: #aeff7e;
         color: #000000;
