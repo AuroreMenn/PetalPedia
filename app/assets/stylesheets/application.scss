@@ -1,43 +1,43 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 
+@import "bootstrap";
 
- @import "bootstrap";
-
- header {
+/* En-tête */
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 1em;
     padding-right: 1em;
     align-items: center;
+    background-color: pink;
+    color: #000000; 
 }
 
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:hover {
+    color: #000000; /* Noir au survol */
+    scale: 1.1;
+}
+
+/* Titre */
 h1 {
-        font-family: "Cookie", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        font-size: 3.5em;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3.5em;
 }
 
+/* Contenu principal */
 main {
     font-family: "Raleway", sans-serif;
 }
 
+/* Recherche de fleurs */
 .flower_search {
     display: flex;
     flex-direction: row;
@@ -45,26 +45,30 @@ main {
     padding-right: 1em;
 }
 
+/* Champ */
 .field{
     margin-right:  10px;
 }
 
+/* Conteneur de fleurs */
 #flowers {
-        padding-left: 1em;
-        padding-right: 1em;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
+/* Carte */
 .card {
     width: calc(25% - 20px);
     margin: 10px;
     box-sizing: border-box;
 }
 
+/* Formulaire dans le conteneur */
 .form_container form {
     display: flex;
     flex-direction: column;
@@ -72,6 +76,7 @@ main {
     font-family: "Raleway", sans-serif;
 }
 
+/* Div dans le conteneur principal */
 .maman_div div {
     margin-bottom: 10px;
     display: flex;
@@ -80,36 +85,60 @@ main {
     font-family: "Raleway", sans-serif;
 }
 
+/* Ajout de fleurs */
 .add_flower {
     display: flex;
     justify-content: center;
 }
 
+/* Boutons */
 .bouttons {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* Pied de page */
 footer {
-        background-color: #b2f88a;
-        color: #000000;
-        padding: 20px;
-        text-align: center;
-    }
-    
-footer nav {
-    margin-top: 10px;
+    background-color: pink;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
 }
 
+/* Liens dans le pied de page */
 footer nav a {
-    color: #000000;
+    color: #000000; 
     text-decoration: none;
     margin: 0 10px;
 }
 
-footer nav a:hover{
-    color:rgb(5, 124, 59)
+/* Liens dans le pied de page au survol */
+footer nav a:hover {
+    color: #000000; /* Noir au survol */
+    scale: 1.1;
 }
 
+/* Liens dans l'en-tête et section .add_flower */
+header nav a,
+.add_flower nav a {
+    color: #000000; /* Vert foncé */
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-
+/* Liens dans l'en-tête et section .add_flower au survol */
+header nav a:hover,
+.add_flower nav a:hover {
+    color: #000000; /* Noir au survol */
+}
+.btn-primary{
+background-color: rgb(248, 155, 171);
+color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+}
+.btn-primary:hover {
+scale: 1.1;
+color:black;
+background-color: rgb(248, 155, 171);
+border-color: black;
+}
