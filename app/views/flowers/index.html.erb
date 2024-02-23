@@ -29,12 +29,13 @@
       <img src="<%= flower.image %>" class="flower_image" alt="Image de fleur" height="180px">
         <div class="card-body">
           <p class="card-text"><%= flower.name %></p>
-          <a><%= link_to "Show this flower", flower %></a>
+          <a><%= link_to "Découvrir cette fleur", flower %></a>
         </div>
     </div>
   <% end %>
 </div>
 
-<%= link_to "Ajouter une nouvelle pleur", new_flower_path %>
+<div class="add_flower">
+<%= link_to "Ajouter une nouvelle fleur", new_flower_path %>
 
 </main>
