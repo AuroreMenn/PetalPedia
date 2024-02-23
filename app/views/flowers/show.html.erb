@@ -3,17 +3,16 @@
 <%= render @flower %>
 
 <div>
-  <%= link_to "Edit this flower", edit_flower_path(@flower) %> |
-  <%= link_to "Back to flowers", flowers_path %>
+  <%= link_to "Modifier cette fleur", edit_flower_path(@flower) %> |
+  <%= link_to "Retour à la page d'accueil", flowers_path %>
 
-  <%= button_to "Destroy this flower", @flower, method: :delete %>
+  <%= button_to "Supprimer cette fleur", @flower, method: :delete %>
 </div>
 
 <footer>
     <br><p>Copyright © 2024 - PetalPedia</p>
     <nav>
         <a href="/flowers">Accueil</a>
-        <a href="/about">À propos</a>
-        <a href="/contact">Nous Contacter</a>
+        <a href="/flowers/new">Ajouter une fleur</a>
     </nav><br>
 </footer>
