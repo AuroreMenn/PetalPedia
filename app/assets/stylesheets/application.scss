@@ -85,7 +85,7 @@ main {
 }
 
 footer {
-        background-color: #b9ff81;
+        background-color: #aeff7e;
         color: #000000;
         padding: 20px;
         text-align: center;
@@ -101,5 +101,8 @@ footer nav a {
     margin: 0 10px;
 }
 
+footer nav a:hover{
+    color:rgb(5, 124, 59)
+}
 
 
