@@ -4,18 +4,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <main>
+<header>
+  <h1>PetalPedia</h1>
 
-<h1>PetalPedia</h1>
-<%= search_form_for @q do |f| %>
-  <div class="field">
-    <%= f.label :name_cont, "Search for:" %>
-    <%= f.search_field :name_cont %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Search", class: "btn btn-primary" %>
-  </div>
-<% end %>
-
+  <div class="header_search">
+    <%= search_form_for @q do |f| %>
+      <div class="field">
+        <%= f.label :name_cont, "Search for:" %>
+        <%= f.search_field :name_cont %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Search", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+    </div>
+</header>
 
 <div id="flowers">
   <% @flowers.each do |flower| %>

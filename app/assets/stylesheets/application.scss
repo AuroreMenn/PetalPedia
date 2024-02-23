@@ -75,12 +75,28 @@ footer {
         text-align: center;
     }
     
-    footer nav {
-        margin-top: 10px;
-    }
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     
-    footer nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 10px;
-    }
+}
+.header_search{
+    display: flex;
+    flex-direction: row;
+    right: 0;
+}
+
+h1{
+    margin-left: 5%;
+}
